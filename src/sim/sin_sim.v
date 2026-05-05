@@ -4,7 +4,7 @@
 `timescale 1ns/1ps
 
 module sin (
-    input  wire        address,
+    input  wire [9:0]  address,
     input  wire        clock,
     output reg  [9:0]  q
 );

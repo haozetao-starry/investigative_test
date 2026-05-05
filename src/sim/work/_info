@@ -1,0 +1,251 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Lenovo/Desktop/investigative_test/src/sim
+vad_wave_rec
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1777977803
+!i10b 1
+!s100 SM?H@4@@FQRd:218N4BdX3
+I?4^c>W6l]P>G4QC<_6gQC0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ad_wave_rec_v_unit
+S1
+R0
+w1777715193
+8../adc_acq/ad_wave_rec.v
+F../adc_acq/ad_wave_rec.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1777977803.000000
+!s107 ../adc_acq/ad_wave_rec.v|
+!s90 -reportprogress|300|+acc|-sv|../adc_acq/ad_wave_rec.v|
+!i113 1
+Z6 o+acc -sv
+Z7 tCvgOpt 0
+vad_wave_rec_tb
+R1
+R2
+!i10b 1
+!s100 <M036W?J3=^lVBoVTDAZa2
+IkibQ[iSTWzk36_2Rm8zMX2
+R3
+Z8 !s105 ad_wave_rec_tb_v_unit
+S1
+R0
+Z9 w1777977564
+Z10 8./ad_wave_rec_tb.v
+Z11 F./ad_wave_rec_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+Z12 !s107 ./ad_wave_rec_tb.v|
+Z13 !s90 -reportprogress|300|+acc|-sv|./ad_wave_rec_tb.v|
+!i113 1
+R6
+R7
+vADC_RAM
+R1
+R2
+!i10b 1
+!s100 H8Pg[iigVm@>ELV?:;=:l2
+IQmIh4jz0nMk7OfJSMOQXa1
+R3
+!s105 ADC_RAM_sim_v_unit
+S1
+R0
+w1777974133
+8./ADC_RAM_sim.v
+F./ADC_RAM_sim.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./ADC_RAM_sim.v|
+!s90 -reportprogress|300|+acc|-sv|./ADC_RAM_sim.v|
+!i113 1
+R6
+R7
+n@a@d@c_@r@a@m
+vdds_amp
+R1
+Z14 !s110 1777977802
+!i10b 1
+!s100 1jUO?JCAl8;D=E7b5OUkO1
+IMKk^ARgaWKLEhnkj;TM8?2
+R3
+!s105 dds_amp_v_unit
+S1
+R0
+w1777715174
+8../dds/dds_amp.v
+F../dds/dds_amp.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z15 !s108 1777977802.000000
+!s107 ../dds/dds_amp.v|
+!s90 -reportprogress|300|+acc|-sv|../dds/dds_amp.v|
+!i113 1
+R6
+R7
+vdds_phase
+R1
+R14
+!i10b 1
+!s100 e@PQA;<6;:W^Zi_]9okeS0
+Ia:X<P]zLz_mHzbm@6L<OS0
+R3
+!s105 dds_phase_v_unit
+S1
+R0
+w1776955980
+8../dds/dds_phase.v
+F../dds/dds_phase.v
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 ../dds/dds_phase.v|
+!s90 -reportprogress|300|+acc|-sv|../dds/dds_phase.v|
+!i113 1
+R6
+R7
+vdds_sweep_ctrl
+R1
+Z16 !s110 1777972944
+!i10b 1
+!s100 Mm3HdzX3@>;FJAHajfHH90
+ID94_kW;jLOT[RQ;Ca`aHM1
+R3
+!s105 dds_sweep_ctrl_v_unit
+S1
+R0
+w1777013582
+8../dds/dds_sweep_ctrl.v
+F../dds/dds_sweep_ctrl.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z17 !s108 1777972944.000000
+!s107 ../dds/dds_sweep_ctrl.v|
+!s90 -reportprogress|300|+acc|-sv|../dds/dds_sweep_ctrl.v|
+!i113 1
+R6
+R7
+vdds_sweep_tb
+R1
+R16
+!i10b 1
+!s100 EM:3dH6deVmISE1k2fG]g2
+Ie``2_ziF[TPfQMBaQDFm82
+R3
+!s105 dds_sweep_tb_v_unit
+S1
+R0
+w1777800925
+8./dds_sweep_tb.v
+F./dds_sweep_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R17
+!s107 ./dds_sweep_tb.v|
+!s90 -reportprogress|300|+acc|-sv|./dds_sweep_tb.v|
+!i113 1
+R6
+R7
+vdds_top
+R1
+R2
+!i10b 1
+!s100 hB?ClJ35@;bK?2ME<;7fN3
+Il5QFiRn3R;_zXmne7RJWc0
+R3
+!s105 dds_top_v_unit
+S1
+R0
+w1776955981
+8../dds/dds_top.v
+F../dds/dds_top.v
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 ../dds/dds_top.v|
+!s90 -reportprogress|300|+acc|-sv|../dds/dds_top.v|
+!i113 1
+R6
+R7
+vsin
+R1
+R2
+!i10b 1
+!s100 `TTGaO:13PiY;bW?eX:bF1
+I0RdDoQH?bahTN9Z=XaYZ90
+R3
+!s105 sin_sim_v_unit
+S1
+R0
+w1777799219
+8./sin_sim.v
+F./sin_sim.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./sin_sim.v|
+!s90 -reportprogress|300|+acc|-sv|./sin_sim.v|
+!i113 1
+R6
+R7
+vsmp_div_adapt
+R1
+R2
+!i10b 1
+!s100 27eELZV`eT2dH>J^lCz8:2
+IGMXOd[7:cN2QB>TGzTK_z0
+R3
+R8
+S1
+R0
+R9
+R10
+R11
+L0 192
+R4
+r1
+!s85 0
+31
+R5
+R12
+R13
+!i113 1
+R6
+R7

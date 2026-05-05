@@ -1,3 +1,4 @@
+// DDS Amplitude Modulator
 module dds_amp(
     input  wire        clk,
     input  wire        rst_n,
@@ -20,7 +21,7 @@ module dds_amp(
         else if(scaled_wave > 10'sd255)
             wave_out <= 8'd255;
         else
-            wave_out <= scaled_wave[7:0];
+            wave_out <= scaled_wave[7:0];   
     end
 
 endmodule

@@ -1,0 +1,126 @@
+# do sim_ad_wave_rec.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying D:/intelFPGA/18.0/modelsim_ase/win32aloem/modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:22 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ../dds/dds_phase.v 
+# -- Compiling module dds_phase
+# 
+# Top level modules:
+# 	dds_phase
+# End time: 18:43:22 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:22 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ../dds/dds_amp.v 
+# -- Compiling module dds_amp
+# 
+# Top level modules:
+# 	dds_amp
+# End time: 18:43:22 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:22 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ../dds/dds_top.v 
+# -- Compiling module dds_top
+# 
+# Top level modules:
+# 	dds_top
+# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:23 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ./sin_sim.v 
+# -- Compiling module sin
+# 
+# Top level modules:
+# 	sin
+# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:23 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ./ADC_RAM_sim.v 
+# -- Compiling module ADC_RAM
+# 
+# Top level modules:
+# 	ADC_RAM
+# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:23 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ../adc_acq/ad_wave_rec.v 
+# -- Compiling module ad_wave_rec
+# 
+# Top level modules:
+# 	ad_wave_rec
+# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:23 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ./ad_wave_rec_tb.v 
+# -- Compiling module ad_wave_rec_tb
+# -- Compiling module smp_div_adapt
+# 
+# Top level modules:
+# 	ad_wave_rec_tb
+# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.ad_wave_rec_tb 
+# Start time: 18:43:23 on May 05,2026
+# Loading sv_std.std
+# Loading work.ad_wave_rec_tb
+# Loading work.smp_div_adapt
+# Loading work.dds_top
+# Loading work.dds_phase
+# Loading work.sin
+# Loading work.dds_amp
+# Loading work.ad_wave_rec
+# Loading work.ADC_RAM
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: H-ZT  ProcessID: 37600
+#           Attempting to use alternate WLF file "./wlfteisfrw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfteisfrw
+# 
+# 
+# ╔═══════════════════════════════════════════════════════╗
+# ║  ADC Adaptive smp_div — Fast Verification            ║
+# ╠═══════════════════════════════════════════════════════╣
+# ║  Step  Freq     smp_div   sample rate                ║
+# ║  ──── ──────── ───────── ───────────                ║
+# ║   1    100 Hz     999      25 kSps                   ║
+# ║   2    1 kHz       99     250 kSps                   ║
+# ║   3    10 kHz       9     2.5 MSps                   ║
+# ║   4    100 kHz      0      25 MSps                   ║
+# ╚═══════════════════════════════════════════════════════╝
+# 
+# [   90000] Reset released
+# 
+# --- Phase 1: smp_div switching demo ---
+# [ 1290000] f=100Hz  smp_div=999
+# [ 2290000] f=1kHz   smp_div=99
+# [ 3290000] f=10kHz  smp_div=9
+# [ 4290000] f=100kHz smp_div=0
+# 
+# --- Phase 2: acquisition @ 100kHz (smp_div=0) ---
+# [ 4310000] acq_start pulsed
+# [ 4930000] buf_full — 16 samples captured
+# [ 5030000] Readback first 8:
+# [ 5051000]   [ 0] ref=  x  adc=  x
+# [ 5071000]   [ 1] ref=174  adc= 76
+# [ 5091000]   [ 2] ref=175  adc= 84
+# [ 5111000]   [ 3] ref=176  adc= 93
+# [ 5131000]   [ 4] ref=177  adc=103
+# [ 5151000]   [ 5] ref=178  adc=112
+# [ 5171000]   [ 6] ref=179  adc=121
+# [ 5191000]   [ 7] ref=180  adc=131
+# 
+# Done.  cycles=264  time=5390000 ns
+# ** Note: $finish    : ./ad_wave_rec_tb.v(161)
+#    Time: 5390 ns  Iteration: 1  Instance: /ad_wave_rec_tb
+# 1
+# Break in Module ad_wave_rec_tb at ./ad_wave_rec_tb.v line 161
+# End time: 18:49:12 on May 05,2026, Elapsed time: 0:05:49
+# Errors: 0, Warnings: 2
