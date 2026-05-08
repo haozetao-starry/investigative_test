@@ -1,126 +1,113 @@
-# do sim_ad_wave_rec.do
+# do sim_filter_classifier.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work work 
 # Modifying D:/intelFPGA/18.0/modelsim_ase/win32aloem/modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:43:22 on May 05,2026
-# vlog -reportprogress 300 "+acc" -sv ../dds/dds_phase.v 
-# -- Compiling module dds_phase
+# Start time: 19:35:12 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ../analysis/sweep_result_store.v 
+# -- Compiling module sweep_result_store
 # 
 # Top level modules:
-# 	dds_phase
-# End time: 18:43:22 on May 05,2026, Elapsed time: 0:00:00
+# 	sweep_result_store
+# End time: 19:35:13 on May 05,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:43:22 on May 05,2026
-# vlog -reportprogress 300 "+acc" -sv ../dds/dds_amp.v 
-# -- Compiling module dds_amp
+# Start time: 19:35:13 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ../analysis/filter_classifier.v 
+# -- Compiling module filter_classifier
+# ** Note: (vlog-143) Recognized 1 FSM in module "filter_classifier(verilog)".
 # 
 # Top level modules:
-# 	dds_amp
-# End time: 18:43:22 on May 05,2026, Elapsed time: 0:00:00
+# 	filter_classifier
+# End time: 19:35:13 on May 05,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:43:22 on May 05,2026
-# vlog -reportprogress 300 "+acc" -sv ../dds/dds_top.v 
-# -- Compiling module dds_top
+# Start time: 19:35:13 on May 05,2026
+# vlog -reportprogress 300 "+acc" -sv ./filter_classifier_tb.v 
+# -- Compiling module filter_classifier_tb
+# ** Warning: ./filter_classifier_tb.v(203): (vlog-2697) MSB of part-select into 'write_idx' is out of bounds.
 # 
 # Top level modules:
-# 	dds_top
-# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:43:23 on May 05,2026
-# vlog -reportprogress 300 "+acc" -sv ./sin_sim.v 
-# -- Compiling module sin
-# 
-# Top level modules:
-# 	sin
-# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:43:23 on May 05,2026
-# vlog -reportprogress 300 "+acc" -sv ./ADC_RAM_sim.v 
-# -- Compiling module ADC_RAM
-# 
-# Top level modules:
-# 	ADC_RAM
-# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:43:23 on May 05,2026
-# vlog -reportprogress 300 "+acc" -sv ../adc_acq/ad_wave_rec.v 
-# -- Compiling module ad_wave_rec
-# 
-# Top level modules:
-# 	ad_wave_rec
-# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:43:23 on May 05,2026
-# vlog -reportprogress 300 "+acc" -sv ./ad_wave_rec_tb.v 
-# -- Compiling module ad_wave_rec_tb
-# -- Compiling module smp_div_adapt
-# 
-# Top level modules:
-# 	ad_wave_rec_tb
-# End time: 18:43:23 on May 05,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" work.ad_wave_rec_tb 
-# Start time: 18:43:23 on May 05,2026
+# 	filter_classifier_tb
+# End time: 19:35:13 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" work.filter_classifier_tb 
+# Start time: 19:35:13 on May 05,2026
 # Loading sv_std.std
-# Loading work.ad_wave_rec_tb
-# Loading work.smp_div_adapt
-# Loading work.dds_top
-# Loading work.dds_phase
-# Loading work.sin
-# Loading work.dds_amp
-# Loading work.ad_wave_rec
-# Loading work.ADC_RAM
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lenovo  Hostname: H-ZT  ProcessID: 37600
-#           Attempting to use alternate WLF file "./wlfteisfrw".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfteisfrw
+# Loading work.filter_classifier_tb
+# Loading work.sweep_result_store
+# Loading work.filter_classifier
 # 
 # 
-# ╔═══════════════════════════════════════════════════════╗
-# ║  ADC Adaptive smp_div — Fast Verification            ║
-# ╠═══════════════════════════════════════════════════════╣
-# ║  Step  Freq     smp_div   sample rate                ║
-# ║  ──── ──────── ───────── ───────────                ║
-# ║   1    100 Hz     999      25 kSps                   ║
-# ║   2    1 kHz       99     250 kSps                   ║
-# ║   3    10 kHz       9     2.5 MSps                   ║
-# ║   4    100 kHz      0      25 MSps                   ║
-# ╚═══════════════════════════════════════════════════════╝
+# ╔══════════════════════════════════════════════════════════╗
+# ║   Filter Classifier — 6-Type Verification Testbench     ║
+# ╠══════════════════════════════════════════════════════════╣
+# ║  Test cases: ALLPASS LOWPASS HIGHPASS BANDPASS NOTCH    ║
+# ║              UNKNOWN (total 6)                          ║
+# ║  Sweep points per test: 100                             ║
+# ╚══════════════════════════════════════════════════════════╝
 # 
-# [   90000] Reset released
 # 
-# --- Phase 1: smp_div switching demo ---
-# [ 1290000] f=100Hz  smp_div=999
-# [ 2290000] f=1kHz   smp_div=99
-# [ 3290000] f=10kHz  smp_div=9
-# [ 4290000] f=100kHz smp_div=0
+# [   90000 ns] Reset released
 # 
-# --- Phase 2: acquisition @ 100kHz (smp_div=0) ---
-# [ 4310000] acq_start pulsed
-# [ 4930000] buf_full — 16 samples captured
-# [ 5030000] Readback first 8:
-# [ 5051000]   [ 0] ref=  x  adc=  x
-# [ 5071000]   [ 1] ref=174  adc= 76
-# [ 5091000]   [ 2] ref=175  adc= 84
-# [ 5111000]   [ 3] ref=176  adc= 93
-# [ 5131000]   [ 4] ref=177  adc=103
-# [ 5151000]   [ 5] ref=178  adc=112
-# [ 5171000]   [ 6] ref=179  adc=121
-# [ 5191000]   [ 7] ref=180  adc=131
+# [  190000 ns] ═══ Test 1: ALLPASS  (expected type=5) ═══
+# [ 4230000 ns]   Wrote 100 entries, result_count=100
+# [ 4250000 ns]   classify_start pulsed
+# [ 6270000 ns]   classifier_done — filter_type=5 (ALLPASS )
+# [ 6270000 ns]   >>> PASS: got ALLPASS  as expected
 # 
-# Done.  cycles=264  time=5390000 ns
-# ** Note: $finish    : ./ad_wave_rec_tb.v(161)
-#    Time: 5390 ns  Iteration: 1  Instance: /ad_wave_rec_tb
+# [ 6470000 ns] ═══ Test 2: LOWPASS  (expected type=1) ═══
+# [10510000 ns]   Wrote 100 entries, result_count=100
+# [10530000 ns]   classify_start pulsed
+# [12550000 ns]   classifier_done — filter_type=1 (LOWPASS )
+# [12550000 ns]   >>> PASS: got LOWPASS  as expected
+# 
+# [12750000 ns] ═══ Test 3: HIGHPASS (expected type=2) ═══
+# [16790000 ns]   Wrote 100 entries, result_count=100
+# [16810000 ns]   classify_start pulsed
+# [18830000 ns]   classifier_done — filter_type=2 (HIGHPASS)
+# [18830000 ns]   >>> PASS: got HIGHPASS as expected
+# 
+# [19030000 ns] ═══ Test 4: BANDPASS (expected type=3) ═══
+# [23070000 ns]   Wrote 100 entries, result_count=100
+# [23090000 ns]   classify_start pulsed
+# [25110000 ns]   classifier_done — filter_type=3 (BANDPASS)
+# [25110000 ns]   >>> PASS: got BANDPASS as expected
+# 
+# [25310000 ns] ═══ Test 5: NOTCH    (expected type=4) ═══
+# [29350000 ns]   Wrote 100 entries, result_count=100
+# [29370000 ns]   classify_start pulsed
+# [31390000 ns]   classifier_done — filter_type=4 (NOTCH   )
+# [31390000 ns]   >>> PASS: got NOTCH    as expected
+# 
+# [31590000 ns] ═══ Test 6: UNKNOWN  (expected type=0) ═══
+# [35630000 ns]   Wrote 100 entries, result_count=100
+# [35650000 ns]   classify_start pulsed
+# [37670000 ns]   classifier_done — filter_type=4 (NOTCH   )
+# [37670000 ns]   >>> FAIL: got NOTCH   , expected UNKNOWN 
+# 
+# 
+# ╔══════════════════════════════════════════════════════════╗
+# ║                  Simulation Summary                     ║
+# ╠══════════════════════════════════════════════════════════╣
+# ║  Test case   Expected     Actual       Result           ║
+# ║  ─────────   ────────     ──────       ──────           ║
+# ║  UNKNOWN       ALLPASS        ALLPASS          PASS              ║
+# ║  LOWPASS       LOWPASS        LOWPASS          PASS              ║
+# ║  HIGHPASS      HIGHPASS       HIGHPASS         PASS              ║
+# ║  BANDPASS      BANDPASS       BANDPASS         PASS              ║
+# ║  NOTCH         NOTCH          NOTCH            PASS              ║
+# ║  ALLPASS       UNKNOWN        NOTCH            FAIL              ║
+# ╠══════════════════════════════════════════════════════════╣
+# ║  PASS: 5 / 6    FAIL: 1 / 6                          ║
+# ║  Cycles: 1888   Time: 37870000 ns                              ║
+# ╚══════════════════════════════════════════════════════════╝
+# 
+# 
+# ** Note: $finish    : ./filter_classifier_tb.v(268)
+#    Time: 37870 ns  Iteration: 1  Instance: /filter_classifier_tb
 # 1
-# Break in Module ad_wave_rec_tb at ./ad_wave_rec_tb.v line 161
-# End time: 18:49:12 on May 05,2026, Elapsed time: 0:05:49
-# Errors: 0, Warnings: 2
+# Break in Module filter_classifier_tb at ./filter_classifier_tb.v line 268
+# End time: 19:41:47 on May 05,2026, Elapsed time: 0:06:34
+# Errors: 0, Warnings: 0
